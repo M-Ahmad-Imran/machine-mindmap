@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sorting Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/Sorting.css">
+    <link rel="icon" type="image/x-icon" href="../css/images/favicon.ico">
+</head>
+
+<body>
+    <script src="../JavaScript/header.js"></script>
+    <main class="sorting-main">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p id="modal-message">Sorting Complete!</p>
+                <span class="close-btn">&times;</span>
+            </div>
+        </div>
+        <!-- <div class="bubblesort-btn"></div> -->
+        <div class="box">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="menubar">
+            <nav>
+                <ul>
+                    <li><button class="menu-btn" id="bubbleSortBtn">Bubble Sort</button></li>
+                    <li><button class="menu-btn" id="selectionSortBtn">Selection Sort</button></li>
+                    <li><button class="menu-btn" id="insertionSortBtn">Insertion Sort</button></li>
+                    <li><button class="menu-btn" id="quickSortBtn">Quick Sort</button></li>
+                    <li><button class="menu-btn" id="mergeSortBtn">Merge Sort</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="btn-section">
+            <button class="methods" id="BubbleSortButton">Visualize Bubble Sort</button>
+            <button class="methods" id="quickSortButton">Visualize Quick Sort</button>
+            <button class="methods" id="SelectionSortButton">Visualize Selection Sort</button>
+            <button class="methods" id="InsertionSortButton">Visualize Insertion Sort</button>
+            <button class="methods" id="mergeSortButton">Visualize Merge Sort</button>
+            <div class="handlers">
+                <input type="submit" id="regenerateButton" value="REGENERATE">
+                <input type="submit" id="togglePauseBtn" value="PAUSE">
+            </div>
+        </div>
+        <div class="range-btn">
+            <label for="arraySizeInput">Array Size</label>
+            -<input type="range" id="arraySizeInput" min="10" max="45" value="30">+
+
+            <label for="swapSpeedInput">Swap Speed (ms)</label>
+            -<input type="range" id="swapSpeedInput" min="100" max="1000" value="100">+
+
+        </div>
+        <div class="graph">
+            <div id="arrayContainer" class="array-container"></div>
+        </div>
+    </main>
+    <script src="../JavaScript/Sorting.js"></script>
+</body>
+
+</html>

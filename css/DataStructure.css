@@ -1,0 +1,355 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: rgba(11, 11, 44, 0.88); */
+    background-blend-mode: multiply;
+    background-image: url(../images/Dsa.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #634848;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.DM-main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+}
+
+.sideBar {
+    width: 30%;
+    height: fit-content;
+    margin: 50px 0;
+    padding: 30px;
+    background-color: rgba(25, 19, 59, 0.466);
+    position: sticky;
+    text-transform: uppercase;
+    top: 15%;
+}
+
+.overview {
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(30deg, blue, #ffe817, #0b2f53);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sideBar ol {
+    list-style: square;
+}
+
+.sideBar ul {
+    list-style: none;
+}
+
+.sideBar ul.custom-bullets li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.sideBar ul.custom-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, yellow, blue);
+    margin-top: 5px;
+}
+
+.sideBar a {
+    text-decoration: none;
+    color: beige;
+    line-height: 1.5lh;
+}
+
+.sideBar a:hover {
+    color: chocolate;
+}
+
+/* MAIN SECTION  */
+
+.theoryContainer {
+    width: 70%;
+    margin: 40px;
+}
+
+/* First section */
+.firstSection h1 {
+    padding: 10px 0;
+}
+
+.firstSection .heading {
+    color: blueviolet;
+}
+
+p {
+    line-height: 1.4ic;
+    background-color: #972a2a79;
+    padding: 10px;
+    font-size: 21px;
+}
+
+.points {
+    font-size: 25px;
+    color: chartreuse;
+}
+
+.img-box {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.images {
+    background-color: white;
+}
+
+.firstSection .cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.firstSection .cards .card {
+    width: 45%;
+    border: 2px solid blue;
+    padding: 10px;
+    background-color: #6348487c;
+    align-content: center;
+}
+
+ul {
+    list-style: decimal;
+}
+
+.linear-ds .non-linear-list {
+    padding: 30px;
+    font-size: 21px;
+    line-height: 1.3lh;
+    line-gap-override: 2lh;
+    background-color: rgba(26, 8, 54, 0.507);
+}
+
+.linear-ds li{
+    margin-left: 15px;
+}
+
+.non-linear-list li{
+    padding-bottom: 15px;
+}
+
+/* Visualize Section */
+
+.stack-container,
+.ll-container,
+.queue-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    color: wheat;
+    background: rgba(46, 37, 37, 0.815);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-height: 35dvh;
+}
+
+.array,
+.linked-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 10px 0;
+}
+
+.box-container-queue,
+.box-container-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.arrowbox {
+    position: relative;
+    bottom: 16px;
+}
+
+.index {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #555;
+}
+
+.controls {
+    margin: 20px 0;
+    text-align: center;
+}
+
+input {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.controls button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #45a049;
+}
+
+.moving-box {
+    position: absolute;
+    background-color: yellow;
+    color: blue;
+    font-weight: 900;
+    border: 2px solid #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.top-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.top-box::after {
+    content: "";
+    width: 0;
+    height: 0;
+    /* border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid black; */
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+.svg-arrow {
+    width: 50px;
+    height: 50px;
+}
+
+.linked-list-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.linked-list-node .box {
+    position: relative;
+}
+
+.linked-list-node .pointer {
+    width: 0;
+    height: 0;
+    border-top: 2px solid #4caf50;
+    width: 50px;
+    height: 2px;
+    margin-top: 2px;
+}
+
+.address {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #555;
+}
+
+svg line,
+svg polygon {
+    transition: all 1s ease;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .sideBar h1{
+        font-size: 27px;
+    }
+
+    .sideBar h2 {
+        line-height: 1.4lh;
+        font-size: 20px;
+    }
+
+    /* .box,
+    .moving-box {
+        width: 40px;
+        height: 40px;
+    } */
+}
+
+@media screen and (max-width: 1000px) {
+    .sideBar{
+        display: none;
+    }
+    .theoryContainer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .theoryContainer{
+        margin: 0;
+    }
+    .firstSection .cards {
+        flex-direction: column;
+    }
+    .firstSection .cards .card{
+        width: 100%;
+        gap: 10px;
+    }
+}

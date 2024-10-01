@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url(images/aboutus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+.about-main .about-title {
+    min-height: 80vh;
+}
+
+.title-aboutus {
+    padding: 2% 6%;
+    font-size: 50px;
+    color: wheat;
+    text-shadow: 0 0 5px rgba(225, 255, 255, 0.397);
+    font-family: "Courier New", Courier, monospace;
+    background: linear-gradient(#81812c, #203320);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+@media screen and (min-width: 1000px) {
+    .reason {
+        width: 40%;
+        padding: 0 0 !important;
+        margin-left: 6%;
+        color: rgba(245, 222, 179, 0.726);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 20px;
+        border-bottom: 10px solid #301f30;
+    }
+}
+
+.reason {
+    padding: 0 5%;
+    color: rgba(245, 222, 179, 0.726);
+}

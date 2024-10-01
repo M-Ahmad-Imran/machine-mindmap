@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structure Visualization</title>
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/DataStructure.css">
+    <link rel="icon" type="image/x-icon" href="../css\images\favicon.ico">
+</head>
+
+<body>
+    <script src="../JavaScript/header.js"></script>
+    <main class="DM-main">
+        <div class="sideBar">
+            <h1 class="overview"><a href="#dataStructure">Data Structures</a></h1>
+            <ol>
+                <li>
+                    <h2><a href="#LinearDs">Linear Data Structure</a></h2>
+                    <ul class="custom-bullets">
+                        <li><a href="#array">Arrays</a></li>
+                        <li><a href="#linkedList">Linked List</a></li>
+                        <li><a href="#stack">Stack</a></li>
+                        <li><a href="#queue">Queue</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="#nonLinearDs">Non-Linear Data Structure</a></h2>
+                    <ul class="custom-bullets">
+                        <li><a href="#tree">Trees</a></li>
+                        <li><a href="#graph">Graph</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div class="theoryContainer">
+            <div class="firstSection">
+                <h1 id="dataStructure">What is <span class="heading overview">DATA STRUCTURE</span>?</h1>
+                <p>A data structure is a specialized format for <span class="points">organizing, managing, and
+                        storing</span>
+                    data in a computer so that it can be accessed and modified efficiently. Different types of data
+                    structures are suited
+                    to different kinds of applications, and some are highly specialized to specific tasks. Common data
+                    structures include arrays, linked lists, stacks, queues, trees, graphs, hash tables, and heaps.
+                    The choice of data structure affects the performance of algorithms and can significantly influence
+                    the efficiency of a program.
+                </p><br>
+                <div class="img-box">
+                    <img src="../images/data-Structure.jpg" alt="data structure" width="85%">
+                </div>
+                <p>At its core, a data structure is an organized collection of data, designed to enable efficient
+                    operations on that data. This organization is based on specific <span class="points">rules or
+                        logical</span> relationships,
+                    which determine how data is stored and how it can be accessed. The main purpose of data structures
+                    is to provide a systematic way to manage and manipulate data, making it easier to perform various
+                    operations such as searching, sorting, inserting, updating, and deleting.
+                </p>
+                <div class="cards">
+                    <div class="card">
+                        <h2>EXAMPLE:</h2>
+                        <p>The efficiency of data structures lies in their ability to optimize these operations. For
+                            example, some data structures are designed to allow rapid access to data, making them ideal
+                            for applications where quick retrieval is crucial. Others may focus on minimizing the amount
+                            of space required to store data, which is important in environments with limited memory
+                            resources. Additionally, certain data structures are optimized for specific types of data or
+                            operations, such as hierarchical data organization or sequential processing.</p>
+                    </div>
+                    <div class="card">
+                        <h2>KEY ASPECT:</h2>
+                        <p>A key aspect of data structures is the concept of abstraction. Abstraction allows developers
+                            to focus on the high-level operations and interactions with the data, without needing to
+                            worry about the low-level details of how the data is physically stored in memory. This
+                            separation of concerns is critical for developing complex systems, as it simplifies the
+                            design and implementation processes, and enhances code maintainability and reusability.</p>
+                    </div>
+                </div>
+                <p>Another <span class="points">important feature</span> of data structures is their ability to support
+                    different operations and
+                    algorithms. The choice of data structure can significantly impact the performance of these
+                    algorithms, influencing factors such as time complexity and space complexity. Time complexity refers
+                    to the amount of time an algorithm takes to complete as a function of the size of the input data,
+                    while space complexity refers to the amount of memory required. Efficient data structures can help
+                    minimize these complexities, leading to faster and more resource-efficient programs.</p>
+                <p><span class="points">In real-world applications</span>, data structures play a vital role across
+                    various domains. For example,
+                    they are used in databases to manage and organize records, in operating systems for memory
+                    management, in networking for data packet routing, and in software development for managing
+                    collections of data elements. The choice of the appropriate data structure depends on the specific
+                    requirements of the application, such as the types of operations needed, the frequency of these
+                    operations, and the constraints on resources.</p>
+                <p><span class="points">In summary,</span> data structures are essential tools in computing, providing a
+                    framework for efficiently
+                    organizing and managing data. They enable developers to design systems that are both efficient and
+                    scalable, capable of handling large volumes of data and complex operations. The careful selection
+                    and implementation of data structures are crucial for optimizing the performance and resource
+                    utilization of software applications.</p>
+            </div>
+            <div class="secondSection">
+                <h1>Types Of <span class="overview">Data Structure:</span></h1>
+                <p>
+                    Data structures can be broadly categorized into two main types: linear and non-linear. Each type
+                    includes several specific data structures that are suited to different tasks and applications.
+                </p>
+                <h2 id="LinearDs">1- <span class="overview">Linear Data Structure:</span></h2>
+                <p>Linear data structures are a type of data structure where elements are arranged sequentially, one
+                    after another. Each element is connected to its previous and next elements, forming a linear
+                    sequence. This arrangement allows for straightforward traversal, insertion, and deletion of
+                    elements, making linear data structures fundamental in computer science.</p>
+                <h2>1.1- Types of <span class="overview">Linear Data Structures</span></h2>
+                <ul class="linear-ds">
+                    <li>
+                        <h2 id="array">Array:</h2>
+                    </li>
+                    <p>
+                        An array is a collection of elements, all of the same data type, stored in contiguous memory
+                        locations. Each element can be accessed directly using an index, making arrays efficient for
+                        random access. Arrays have a fixed size, meaning their capacity is determined at the time of
+                        creation and cannot be changed dynamically. They are widely used for storing collections of
+                        data when the size is known in advance.
+                    </p>
+                    <div class="img-box images">
+                        <img src="../images/array.jpg" width="70%" alt="">
+                    </div>
+                    <li>
+                        <h2 id="linkedList">Linked List:</h2>
+                    </li>
+                    <p>
+                        Unlike arrays, linked lists consist of nodes where each node contains data and a reference
+                        (or link) to the next node in the sequence. This dynamic nature allows linked lists to grow
+                        and shrink as needed, making them more flexible than arrays. There are various types of
+                        linked lists, including singly linked lists (each node points to the next), doubly linked
+                        lists (each node points to both the next and the previous nodes), and circular linked lists
+                        (the last node points back to the first node).
+                    </p>
+                    <div class="img-box images">
+                        <img src="../images/linkedlist.jpg" width="70%" alt="">
+                    </div>
+                    <li>
+                        <h2 id="stack">Stack</h2>
+                    </li>
+                    <p>
+                        A stack is a collection of elements with a Last In, First Out (LIFO) order. This means that
+                        the last element added to the stack is the first one to be removed. Stacks are implemented
+                        using arrays or linked lists and support two main operations: push (adding an element to the
+                        top) and pop (removing the top element). Stacks are used in various applications, such as
+                        function call management, expression evaluation, and undo mechanisms in software.
+                    </p>
+                    <div class="img-box images">
+                        <img src="../images/stack.jpg" width="70%" alt="">
+                    </div>
+                    <h2>Stack Array Implementation:</h2>
+                    <p>
+                        In a stack array implementation, the stack is represented using a fixed-size array. The
+                        stack has a pointer called the "top" that indicates the index of the last added element.
+                        Operations include push (adding an element to the top) and pop (removing the top element).
+                        The array implementation is simple and allows for O(1) time complexity for both operations.
+                        However, it requires predefining the maximum size, which can lead to wasted space or
+                        overflow if the stack exceeds its capacity.
+                    </p>
+                    <div class="stack-container" id="stack-array-container">
+                        <h2 class="overview">Stack (Array Implementation)</h2>
+                        <div class="controls">
+                            <input type="number" id="stack-array-input" placeholder="Enter value">
+                            <button id="pushToArrayStack">Push</button>
+                            <button onclick="popFromArrayStack()">Pop</button>
+                        </div>
+                        <div class="box-container">
+                            <div class="box" id="top-box-array">Top</div>
+                        </div>
+                        <div class="array" id="stack-array">
+                            <!-- Top box for stack array -->
+                        </div>
+                    </div>
+                    <h2>Stack LinkedList Implementation</h2>
+                    <p>
+                        In a stack linked list implementation, the stack is represented as a linked list where each
+                        node contains the data and a reference to the next node. The "top" of the stack is
+                        represented by the head of the linked list. The push operation involves creating a new node
+                        and linking it at the beginning of the list, while the pop operation removes the head node.
+                        This implementation allows for dynamic resizing, as it doesn't require a fixed size and can
+                        grow or shrink as needed. Additionally, it provides efficient O(1) time complexity for both
+                        push and pop operations.
+                    </p>
+                    <div class="ll-container" id="stack-linked list-container">
+                        <h2 class="overview">Stack (Linked List Implementation)</h2>
+                        <div class="controls">
+                            <input type="number" id="stack-linkedlist-input" placeholder="Enter value">
+                            <button onclick="pushToLinkedListStack()">Push</button>
+                            <button onclick="popFromLinkedListStack()">Pop</button>
+                        </div>
+                        <div class="top-box">
+                            <div class="box" id="top-box-linkedlist">Top</div>
+                        </div>
+                        <div class="linked-list" id="stack-linkedlist">
+                            <!-- Linked list visualization -->
+                        </div>
+                    </div>
+                    <li>
+                        <h2 id="queue">Queue</h2>
+                    </li>
+                    <p>
+                        A queue is a linear data structure that follows the First In, First Out (FIFO) principle. In
+                        a queue, elements are added at one end, called the "rear," and removed from the opposite
+                        end, called the "front." This structure ensures that the first element added is the first to
+                        be removed, similar to a line of people waiting for service. Queues are commonly used in
+                        scenarios where order needs to be preserved, such as task scheduling, buffering data
+                        streams, and managing requests in web servers. The primary operations on a queue include
+                        enqueue (adding an element to the rear) and dequeue (removing an element from the front).
+                        Queues can be implemented using arrays or linked lists, and can also be extended to support
+                        priority queues, where elements are removed based on priority rather than order.
+                    </p>
+                    <div class="img-box images">
+                        <img src="../images/queue.jpg" width="70%" alt="">
+                    </div>
+                    <h2>Queue Array Implementation:</h2>
+                    <p>
+                        In a queue array implementation, the queue is represented using a fixed-size array. The
+                        "front" and "rear" indices track the positions for removing and adding elements,
+                        respectively. The enqueue operation adds an element at the rear, and the dequeue operation
+                        removes an element from the front. To efficiently use the array, the indices are often
+                        wrapped around in a circular manner, known as a circular queue. While this implementation
+                        allows O(1) time complexity for both enqueue and dequeue operations, it requires predefined
+                        maximum capacity, which may lead to unused space or overflow if the queue becomes full.
+                    </p>
+                    <div class="queue-container" id="queue-section">
+                        <h2 class="overview">Queue (Array Implementation)</h2>
+                        <div class="controls">
+                            <input type="text" id="queue-array-input" placeholder="Enter Value">
+                            <button id="enqueueToArrayQueue">Enqueue</button>
+                            <button onclick="dequeueArrayQueue()">Dequeue</button>
+                        </div>
+                        <div class="box-container">
+                            <div class="box" id="front-box-array">Front: 0</div>
+                            <div class="box" id="top-queue-box-array">Top</div>
+                        </div>
+                        <div class="array" id="queue-array">
+                            <!-- Top box for queue array -->
+                        </div>
+                    </div>
+                    <h2>Queue Linkedlist Implementation:</h2>
+                    <p>
+                        In a queue linked list implementation, the queue is represented as a linked list with
+                        pointers to both the front and rear nodes. Each node contains data and a reference to the
+                        next node. The enqueue operation involves creating a new node and linking it at the rear,
+                        while the dequeue operation removes the front node. This implementation allows the queue to
+                        dynamically resize, as it does not require a fixed capacity. Both enqueue and dequeue
+                        operations are efficient, with O(1) time complexity. This flexibility makes it suitable for
+                        scenarios where the number of elements can vary widely.
+                    </p>
+                    <div class="ll-container" id="queue-linked list-container">
+                        <h2 class="overview">Queue (Linked List Implementation)</h2>
+                        <div class="controls">
+                            <input type="number" id="queue-linkedlist-input" placeholder="Enter value">
+                            <button onclick="enqueueToLinkedListQueue()">Enqueue</button>
+                            <button onclick="dequeueFromLinkedListQueue()">Dequeue</button>
+                        </div>
+                        <div class="top-box">
+                            <div class="box" id="front-box-linkedlist">Top</div>
+                        </div>
+                        <div class="linked-list" id="queue-linkedlist">
+                            <!-- Linked list visualization -->
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="thirdSection">
+                <h1 id="nonLinearDs">2- <span class="overview">Non Linear Data Structure:</span></h1>
+                <p>
+                    Non-linear data structures are types of data structures where elements are not arranged in a
+                    sequential order. Unlike linear data structures, where elements are connected end-to-end, non-linear
+                    data structures allow elements to be connected in multiple ways, reflecting more complex
+                    relationships among the data. This structure enables efficient representation and manipulation of
+                    hierarchical, networked, or clustered data.
+                </p>
+                <h2>2.1- Types of <span class="overview">Non Linear Data Structures</span></h2>
+                <ul class="linear-ds">
+                    <li>
+                        <h2 id="tree">Trees</h2>
+                        <p>
+                            A tree is a hierarchical data structure consisting of nodes, with a single root node and
+                            potentially multiple levels of child nodes. Each node in a tree can have zero or more child
+                            nodes, and each child node has exactly one parent node, except for the root node, which has
+                            no parent.
+                        </p>
+                        <div class="img-box images">
+                            <img src="../images/tree.jpg" width="70%" alt="">
+                        </div>
+                        <ul class="non-linear-list">
+                            <li>
+                                <b>Binary Tree:</b>
+                                A tree where each node has at most two children, referred to as the left child and the
+                                right child.
+                            </li>
+                            <li>
+                                <b>Binary Search Tree (BST):</b>
+                                A binary tree in which each node's left child contains values less than the node, and
+                                the right child contains values greater than the node, enabling efficient searching,
+                                insertion, and deletion.
+                            </li>
+                            <li>
+                                <b>AVL Tree:</b>
+                                A self-balancing binary search tree where the difference in heights between the left and
+                                right subtrees (balance factor) is at most one, ensuring O(log n) time complexity for
+                                basic operations
+                            </li>
+                            <li>
+                                <b>Red-Black Tree:</b>
+                                Another self-balancing binary search tree that maintains balance using color properties
+                                for nodes (red or black), ensuring O(log n) time complexity for operations.
+                            </li>
+                            <li>
+                                <b>Heap:</b>
+                                A complete binary tree used primarily for heap-sort algorithms. In a max heap, each
+                                parent node's value is greater than or equal to the values of its children, while in a
+                                min heap, each parent's value is less than or equal to its children's values.
+                            </li>
+                            <li>
+                                <b>Trie:</b>
+                                A tree-like data structure used to store associative data structures, often used for
+                                searching and managing dynamic sets of strings.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 id="graph">Graphs</h2>
+                        <p>
+                            A graph is a collection of nodes (vertices) and edges connecting pairs of nodes. Graphs can
+                            represent complex relationships and networks.
+                        </p>
+                        <div class="img-box images">
+                            <img src="../images/graph.jpg" width="70%" alt="">
+                        </div>
+                        <ul class="non-linear-list">
+                            <li>
+                                <b>Directed Graph (Digraph):</b>
+                                A graph where edges have a direction, indicating a one-way relationship from one vertex
+                                to another.
+                            </li>
+                            <li>
+                                <b>Undirected Graph:</b>
+                                A graph where edges do not have a direction, indicating a bidirectional relationship
+                                between vertices.
+                            </li>
+                            <li>
+                                <b>Weighted Graph:</b>
+                                A graph in which each edge has an associated weight or cost, commonly used in scenarios
+                                like network routing, where the weight represents distance, cost, or time.
+                            </li>
+                            <li>
+                                <b>Unweighted Graph:</b>
+                                A graph in which all edges are equal and do not have any associated weights.
+                            </li>
+                            <li>
+                                <b>Cyclic Graph:</b>
+                                A graph that contains at least one cycle, meaning there is a path of edges and vertices
+                                wherein a vertex can be revisited.
+                            </li>
+                            <li>
+                                <b>Acyclic Graph:</b>
+                                A graph without cycles. A Directed Acyclic Graph (DAG) is a directed graph with no
+                                cycles and is used in scenarios like task scheduling, data processing, and
+                                representation of dependencies.
+                            </li>
+                            <li>
+                                <b>Connected Graph:</b>
+                                A graph in which there is a path between every pair of vertices.
+                            </li>
+                            <li>
+                                <b>Disconnected Graph:</b>
+                                A graph where some vertices are not connected by a path, resulting in isolated
+                                subgraphs.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="../JavaScript/Data-Structure.js"></script>
+</body>
+
+</html>

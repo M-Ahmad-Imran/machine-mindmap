@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-blend-mode: multiply;
+    background-image: url(../images/Dsa.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #634848;
+}
+
+
+/* Modal container */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    /* Blurs the background */
+    transition: opacity 0.3s ease;
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Modal close button */
+.close-btn {
+    color: #aaa;
+    /* float: right; */
+    font-size: 24px;
+    position: relative;
+    top: -70px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Modal message styling */
+#modal-message {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Animation for modal content */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ensure the page content is hidden until loaded */
+#content {
+    display: none;
+}
+
+
+/* Menu */
+
+.menubar {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    text-align: left;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -500px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.active.menubar {
+    opacity: 1;
+    left: 0;
+    pointer-events: fill;
+}
+
+.box {
+    z-index: 2;
+    width: fit-content;
+    height: auto;
+    margin: 40px;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    border-radius: 4px;
+    margin: 10px 8px;
+    transition: 0.5s;
+}
+
+.active .line1 {
+    transform: translate(0px, 12px) rotate(45deg);
+}
+
+.active .line2 {
+    opacity: 0;
+}
+
+.active .line3 {
+    transform: translate(0px, -12px) rotate(-45deg);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: rgb(127, 173, 141);
+    border-radius: 8px;
+}
+
+nav ul li a {
+    color: wheat;
+    text-decoration: none;
+}
+
+.menu-btn {
+    margin: 0 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+}
+
+.handlers {
+    display: flex;
+    gap: 10px;
+}
+
+/* Button Section */
+.btn-section {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.methods {
+    margin-right: 5px;
+    display: none;
+}
+
+.range-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+.range-btn label {
+    color: white;
+}
+
+.range-btn #arraySizeInput,
+.range-btn #swapSpeedInput {
+    cursor: pointer;
+}
+
+#regenerateButton,
+#togglePauseBtn {
+    width: 140px;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10%;
+}
+
+#regenerateButton:hover,
+#togglePauseBtn:hover {
+    background-color: #523b68;
+}
+
+/* Graph Section */
+
+.sorting-main {
+    height: 80vh;
+}
+
+.array-container {
+    display: flex;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.graph {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.bar {
+    width: 30px;
+    margin-right: 4px;
+    background-color: #241531;
+    color: white;
+    text-shadow: 0 0 5px #387c0b, 0 0 10px rgb(60, 75, 75), 0 0 15px rgb(49, 61, 49), 0 0 20px #0ff, 0 0 25px #0ff, 0 0 30px #0ff;
+    text-align: center;
+    position: relative;
+}
+
+.text {
+    width: 30px;
+    align-items: center;
+    position: sticky;
+    color: white;
+}
