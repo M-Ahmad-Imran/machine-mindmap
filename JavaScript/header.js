@@ -8,9 +8,9 @@ const header = `
     <div class="navbar">
       <ul class="pages">
         <li><a href="https://machine-mindmap.vercel.app/">Home</a></li>
-        <li><a href="https://machine-mindmap.vercel.app/Data-Structure.html">Data Structure</a></li>
-        <li><a href="https://machine-mindmap.vercel.app/Sorting.html">Sorting Algorithms</a></li>
-        <li><a href="https://machine-mindmap.vercel.app/About-Us.html">Our Story</a></li>
+        <li><a href="https://machine-mindmap.vercel.app/Data-Structure">Data Structure</a></li>
+        <li><a href="https://machine-mindmap.vercel.app/Sorting">Sorting Algorithms</a></li>
+        <li><a href="https://machine-mindmap.vercel.app/About-Us">Our Story</a></li>
       </ul>
     </div>
   </div>
