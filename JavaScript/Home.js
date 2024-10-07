@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   setTimeout(() => {
       document.getElementById("preloader").style.display = "none";
       document.getElementById("content").style.display = "block";
-  }, 3000); // Adjust the duration as needed
+  }, 1000); 
 });
 
 // Status Bar

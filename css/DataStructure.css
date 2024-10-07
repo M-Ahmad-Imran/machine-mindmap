@@ -15,10 +15,10 @@ body {
     background-color: #634848;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .DM-main {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     margin: 10px 30px;
@@ -139,20 +139,16 @@ ul {
     list-style: decimal;
 }
 
-.linear-ds .non-linear-list {
-    padding: 30px;
+.non-linear-list {
+    padding: 10px 20px;
     font-size: 21px;
     line-height: 1.3lh;
     line-gap-override: 2lh;
     background-color: rgba(26, 8, 54, 0.507);
 }
 
-.linear-ds li{
+.linear-ds li {
     margin-left: 15px;
-}
-
-.non-linear-list li{
-    padding-bottom: 15px;
 }
 
 /* Visualize Section */
@@ -227,7 +223,7 @@ ul {
 }
 
 input {
-    margin-right: 10px;
+    margin: 10px;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -314,9 +310,44 @@ svg polygon {
     transition: all 1s ease;
 }
 
+.visu {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: #1d1c639c;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 100%;
+    align-content: center;
+}
+
+.visu ul {
+    list-style: none;
+}
+
+.visu ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.visu a {
+    border: none;
+    outline: none;
+    font-size: 28px;
+    width: 100px;
+    margin: 5px;
+    padding: 2px;
+    background-color: #0b2f53;
+    color: #ffe817;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1280px) {
 
-    .sideBar h1{
+    .sideBar h1 {
         font-size: 27px;
     }
 
@@ -333,23 +364,68 @@ svg polygon {
 }
 
 @media screen and (max-width: 1000px) {
-    .sideBar{
+    .sideBar {
         display: none;
     }
-    .theoryContainer{
+
+    .theoryContainer {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 745px) {
-    .theoryContainer{
+
+    .DM-main{
+        margin: 10px;
+    }
+
+    .theoryContainer {
         margin: 0;
     }
+
     .firstSection .cards {
         flex-direction: column;
     }
-    .firstSection .cards .card{
+
+    .firstSection .cards .card {
         width: 100%;
         gap: 10px;
+    }
+
+    p {
+        line-height: 1.2ic;
+        font-size: 15px;
+    }
+
+    .points {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .overview {
+        font-size: 18px;
+    }
+
+    .non-linear-list li {
+        font-size: 16px;
+    }
+
+    .visu {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .visu a {
+        font-size: 16px;
     }
 }

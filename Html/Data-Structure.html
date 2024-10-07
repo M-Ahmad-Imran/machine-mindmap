@@ -35,6 +35,16 @@
             </ol>
         </div>
         <div class="theoryContainer">
+            <div class="visu">
+                <ul>
+                    <li>
+                        <a href="#stack-array-container">Stack</a>
+                    </li>
+                    <li>
+                        <a href="#queue-section">Queue</a>
+                    </li>
+                </ul>
+            </div>
             <div class="firstSection">
                 <h1 id="dataStructure">What is <span class="heading overview">DATA STRUCTURE</span>?</h1>
                 <p>A data structure is a specialized format for <span class="points">organizing, managing, and
@@ -277,106 +287,141 @@
                 <ul class="linear-ds">
                     <li>
                         <h2 id="tree">Trees</h2>
-                        <p>
-                            A tree is a hierarchical data structure consisting of nodes, with a single root node and
-                            potentially multiple levels of child nodes. Each node in a tree can have zero or more child
-                            nodes, and each child node has exactly one parent node, except for the root node, which has
-                            no parent.
-                        </p>
-                        <div class="img-box images">
-                            <img src="../images/tree.jpg" width="70%" alt="">
-                        </div>
-                        <ul class="non-linear-list">
-                            <li>
-                                <b>Binary Tree:</b>
-                                A tree where each node has at most two children, referred to as the left child and the
-                                right child.
-                            </li>
-                            <li>
-                                <b>Binary Search Tree (BST):</b>
-                                A binary tree in which each node's left child contains values less than the node, and
-                                the right child contains values greater than the node, enabling efficient searching,
-                                insertion, and deletion.
-                            </li>
-                            <li>
-                                <b>AVL Tree:</b>
-                                A self-balancing binary search tree where the difference in heights between the left and
-                                right subtrees (balance factor) is at most one, ensuring O(log n) time complexity for
-                                basic operations
-                            </li>
-                            <li>
-                                <b>Red-Black Tree:</b>
-                                Another self-balancing binary search tree that maintains balance using color properties
-                                for nodes (red or black), ensuring O(log n) time complexity for operations.
-                            </li>
-                            <li>
-                                <b>Heap:</b>
-                                A complete binary tree used primarily for heap-sort algorithms. In a max heap, each
-                                parent node's value is greater than or equal to the values of its children, while in a
-                                min heap, each parent's value is less than or equal to its children's values.
-                            </li>
-                            <li>
-                                <b>Trie:</b>
-                                A tree-like data structure used to store associative data structures, often used for
-                                searching and managing dynamic sets of strings.
-                            </li>
-                        </ul>
+
                     </li>
+                    <p>
+                        A tree is a hierarchical data structure consisting of nodes, with a single root node and
+                        potentially multiple levels of child nodes. Each node in a tree can have zero or more child
+                        nodes, and each child node has exactly one parent node, except for the root node, which has
+                        no parent.
+                    </p>
+                    <div class="img-box images">
+                        <img src="../images/tree.jpg" width="70%" alt="">
+                    </div>
+                    <ul class="non-linear-list">
+                        <li>
+                            <b>Binary Tree:</b>
+                        </li>
+                        <p>
+                            A tree where each node has at most two children, referred to as the left child and the
+                            right child.
+                        </p>
+                        <li>
+                            <b>Binary Search Tree (BST):</b>
+                        </li>
+                        <p>
+                            A binary tree in which each node's left child contains values less than the node, and
+                            the right child contains values greater than the node, enabling efficient searching,
+                            insertion, and deletion.
+                        </p>
+                        <li>
+                            <b>AVL Tree:</b>
+                        </li>
+                        <p>
+                            A self-balancing binary search tree where the difference in heights between the left and
+                            right subtrees (balance factor) is at most one, ensuring O(log n) time complexity for
+                            basic operations
+                        </p>
+                        <li>
+                            <b>Red-Black Tree:</b>
+                        </li>
+                        <p>
+                            Another self-balancing binary search tree that maintains balance using color properties
+                            for nodes (red or black), ensuring O(log n) time complexity for operations.
+                        </p>
+                        <li>
+                            <b>Heap:</b>
+                        </li>
+                        <p>
+                            A complete binary tree used primarily for heap-sort algorithms. In a max heap, each
+                            parent node's value is greater than or equal to the values of its children, while in a
+                            min heap, each parent's value is less than or equal to its children's values.
+                        </p>
+                        <li>
+                            <b>Trie:</b>
+                        </li>
+                        <p>
+                            A tree-like data structure used to store associative data structures, often used for
+                            searching and managing dynamic sets of strings.
+                        </p>
+                    </ul>
                     <li>
                         <h2 id="graph">Graphs</h2>
-                        <p>
-                            A graph is a collection of nodes (vertices) and edges connecting pairs of nodes. Graphs can
-                            represent complex relationships and networks.
-                        </p>
-                        <div class="img-box images">
-                            <img src="../images/graph.jpg" width="70%" alt="">
-                        </div>
-                        <ul class="non-linear-list">
-                            <li>
-                                <b>Directed Graph (Digraph):</b>
-                                A graph where edges have a direction, indicating a one-way relationship from one vertex
-                                to another.
-                            </li>
-                            <li>
-                                <b>Undirected Graph:</b>
-                                A graph where edges do not have a direction, indicating a bidirectional relationship
-                                between vertices.
-                            </li>
-                            <li>
-                                <b>Weighted Graph:</b>
-                                A graph in which each edge has an associated weight or cost, commonly used in scenarios
-                                like network routing, where the weight represents distance, cost, or time.
-                            </li>
-                            <li>
-                                <b>Unweighted Graph:</b>
-                                A graph in which all edges are equal and do not have any associated weights.
-                            </li>
-                            <li>
-                                <b>Cyclic Graph:</b>
-                                A graph that contains at least one cycle, meaning there is a path of edges and vertices
-                                wherein a vertex can be revisited.
-                            </li>
-                            <li>
-                                <b>Acyclic Graph:</b>
-                                A graph without cycles. A Directed Acyclic Graph (DAG) is a directed graph with no
-                                cycles and is used in scenarios like task scheduling, data processing, and
-                                representation of dependencies.
-                            </li>
-                            <li>
-                                <b>Connected Graph:</b>
-                                A graph in which there is a path between every pair of vertices.
-                            </li>
-                            <li>
-                                <b>Disconnected Graph:</b>
-                                A graph where some vertices are not connected by a path, resulting in isolated
-                                subgraphs.
-                            </li>
-                        </ul>
                     </li>
+                    <p>
+                        A graph is a collection of nodes (vertices) and edges connecting pairs of nodes. Graphs can
+                        represent complex relationships and networks.
+                    </p>
+                    <div class="img-box images">
+                        <img src="../images/graph.jpg" width="70%" alt="">
+                    </div>
+                    <ul class="non-linear-list">
+                        <li>
+                            <b>Directed Graph (Digraph):</b>
+                        </li>
+                        <p>
+                            A graph where edges have a direction, indicating a one-way relationship from one
+                            vertex
+                            to another.
+                        </p>
+                        <li>
+                            <b>Undirected Graph:</b>
+                        </li>
+                        <p>
+                            A graph where edges do not have a direction, indicating a bidirectional relationship
+                            between vertices.
+                        </p>
+                        <li>
+                            <b>Weighted Graph:</b>
+                        </li>
+                        <p>
+                            A graph in which each edge has an associated weight or cost, commonly used in
+                            scenarios
+                            like network routing, where the weight represents distance, cost, or time.
+                        </p>
+                        <li>
+                            <b>Unweighted Graph:</b>
+                        </li>
+                        <p>
+                            A graph in which all edges are equal and do not have any associated weights.
+                        </p>
+                        <li>
+                            <b>Cyclic Graph:</b>
+                        </li>
+                        <p>
+                            A graph that contains at least one cycle, meaning there is a path of edges and
+                            vertices
+                            wherein a vertex can be revisited.
+                        </p>
+                        <li>
+                            <b>Acyclic Graph:</b>
+                        </li>
+                        <p>
+                            A graph without cycles. A Directed Acyclic Graph (DAG) is a directed graph with no
+                            cycles and is used in scenarios like task scheduling, data processing, and
+                            representation of dependencies.
+                        </p>
+                        <li>
+                            <b>Connected Graph:</b>
+                        </li>
+                        <p>
+                            A graph in which there is a path between every pair of vertices.
+                        </p>
+                        <li>
+                            <b>Disconnected Graph:</b>
+                        </li>
+                        <p>
+                            A graph where some vertices are not connected by a path, resulting in isolated
+                            subgraphs.
+                        </p>
+                    </ul>
                 </ul>
             </div>
         </div>
     </main>
+    <footer>
+        <b>@Copyright MAI-Tech.&nbsp;All Right Reserved 2024 </b>
+      </footer>
     <script src="../JavaScript/Data-Structure.js"></script>
 </body>
 

@@ -5,12 +5,13 @@
 }
 
 body {
-    overflow-x: hidden;
-    background-image: url(images/aboutus.jpg);
+    background-blend-mode: multiply;
+    background-image: url(../images/Dsa.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.842);
+    background-attachment: fixed;
+    background-color: #634848;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .about-main .about-title {
@@ -18,10 +19,10 @@ body {
 }
 
 .title-aboutus {
-    padding: 2% 6%;
+    padding: 5% 6%;
     font-size: 50px;
     color: wheat;
-    text-shadow: 0 0 5px rgba(225, 255, 255, 0.397);
+    text-shadow: 0 0 5px rgba(225, 255, 255, 0.596);
     font-family: "Courier New", Courier, monospace;
     background: linear-gradient(#81812c, #203320);
     background-clip: text;
@@ -34,14 +35,13 @@ body {
         width: 40%;
         padding: 0 0 !important;
         margin-left: 6%;
-        color: rgba(245, 222, 179, 0.726);
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-size: 20px;
         border-bottom: 10px solid #301f30;
     }
 }
 
 .reason {
-    padding: 0 5%;
-    color: rgba(245, 222, 179, 0.726);
+    padding: 5% 5%;
+    color: rgba(245, 222, 179);
+    background-color: #301f30b6;
 }

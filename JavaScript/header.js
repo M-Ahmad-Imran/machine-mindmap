@@ -2,7 +2,7 @@ const header = `
 <div class="header">
     <div class="logoContainer">
       <div class="logoBox">
-        <h1 class="logo"><i><span class="name">MACHINE</span> MINDMAPS</i></h1>
+        <img src="../images/mm-logo.png" alt="logo" class="mm-logo">
       </div>
     </div>
     <div class="navbar">
