@@ -82,9 +82,9 @@ body {
 }
 
 /* Ensure the page content is hidden until loaded */
-#content {
+/* #content {
     display: none;
-}
+} */
 
 
 /* Menu */
@@ -187,6 +187,7 @@ nav ul li a {
 .methods {
     margin-right: 5px;
     display: none;
+
 }
 
 .range-btn {
@@ -196,8 +197,11 @@ nav ul li a {
     color: white;
 }
 
-.range-btn label {
-    color: white;
+.range-btn .size,
+.range-btn .speed{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .range-btn #arraySizeInput,
@@ -227,7 +231,7 @@ nav ul li a {
 /* Graph Section */
 
 .sorting-main {
-    height: 80vh;
+    min-height: 78vh;
 }
 
 .array-container {
@@ -260,21 +264,75 @@ nav ul li a {
 }
 
 @media screen and (max-width: 500px) {
-    .menubar nav{
-        padding-top: 140px;
+    .menubar nav {
+        padding-top: 100px;
     }
 
     nav ul {
         flex-direction: column;
         flex-wrap: wrap;
+        font-size: 18px;
     }
-    .btn-section{
+
+    .btn-section {
         flex-direction: column;
-        padding-top: 60px;
-        width: 100%;
+        padding-top: 30px;
+        width: fit-content;
+        gap: 10px;
     }
-    .box{
+
+    .methods {
+        font-size: 12px;
+        width: 200px;
+        padding: 10px;
+    }
+
+    .box {
         margin: 10px;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+        width: 20px;
+        height: 1px;
+        margin: 5px 4px;
+    }
+
+    .menu-btn{
+        font-size: 18px;
+    }
+
+    .range-btn{
+        flex-direction: column;
+        font-size: 11px;
+    }
+
+    #regenerateButton,
+    #togglePauseBtn {
+        height: 30px;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .active .line1 {
+        transform: translate(0px, 8px) rotate(45deg);
+    }
+    
+    .active .line3 {
+        transform: translate(0px, -4px) rotate(-45deg);
+    }
+
+    .bar{
+        width: 7px;
+    }
+
+    .text{
+        display: none;
+    }
+
+    .modal-content{
+        margin: 70% auto;   
     }
 }
 

@@ -110,7 +110,7 @@ function updateSwapSpeed(speed) {
 }
 
 // Generate Random Bar Function
-function generateBars(arrayLength = 30) {
+function generateBars(arrayLength = 25) {
     const arrayContainer = document.getElementById("arrayContainer");
     arrayContainer.innerHTML = '';
 
@@ -125,7 +125,7 @@ function generateBars(arrayLength = 30) {
         bar.style.height = `${barHeight}px`;
         bar.classList.add("bar");
 
-        text.innerText = barHeight;
+        // text.innerText = barHeight;
         text.classList.add("text");
 
         bar.appendChild(text);
@@ -180,12 +180,12 @@ async function visualizeInsertionSort() {
             if (isPaused) await waitWhilePaused();
             await visualizeComparison(bars[j], bars[i]);
             bars[j + 1].style.height = bars[j].style.height;
-            bars[j + 1].innerHTML = bars[j].innerHTML;
+            // bars[j + 1].innerHTML = bars[j].innerHTML;
             j = j - 1;
         }
 
         bars[j + 1].style.height = `${key}px`;
-        bars[j + 1].innerHTML = key;
+        // bars[j + 1].innerHTML = key;
         await new Promise(resolve => setTimeout(resolve, swapSpeed)); // Delay for visualization
     }
 }
@@ -197,9 +197,9 @@ async function visualizeSwap(bar1, bar2) {
 
     // Swap heights and innerHTML
     bar1.style.height = `${height2}px`;
-    bar1.innerHTML = height2;
+    // bar1.innerHTML = height2;
     bar2.style.height = `${height1}px`;
-    bar2.innerHTML = height1;
+    // bar2.innerHTML = height1;
 
     // Wait for a short time to visualize the swap
     await new Promise(resolve => setTimeout(resolve, swapSpeed)); // Adjust the delay as needed
@@ -279,8 +279,8 @@ async function visualizeQuickSwap(array, idx1, idx2) {
     const bar2 = bars[idx2];
     bar1.style.height = `${height2}px`;
     bar2.style.height = `${height1}px`;
-    bar1.innerHTML = height2;
-    bar2.innerHTML = height1;
+    // bar1.innerHTML = height2;
+    // bar2.innerHTML = height1;
 
     // Move innerHTML content along with the bars
     // const tempInnerHTML = bar1.innerHTML;
@@ -333,7 +333,7 @@ async function visualizeMergeSort(arr, left, mid, right) {
         // Update visualization for the two bars being compared
         const bars = document.querySelectorAll(".bar");
         bars[k - 1].style.backgroundColor = "red"; // Highlight the current bar being swapped
-        bars[k - 1].innerHTML = tempArr[k - 1]; // Move innerHTML content
+        // bars[k - 1].innerHTML = tempArr[k - 1]; // Move innerHTML content
         if (isPaused) await waitWhilePaused();
         await delay(swapSpeed); // Delay to visualize each step
         bars[k - 1].style.height = `${arr[k - 1]}px`; // Update the height of the bar
@@ -347,7 +347,7 @@ async function visualizeMergeSort(arr, left, mid, right) {
         // Update visualization for the bar being copied
         const bars = document.querySelectorAll(".bar");
         bars[k - 1].style.backgroundColor = "red"; // Highlight the current bar being copied
-        bars[k - 1].innerHTML = tempArr[k - 1]; // Move innerHTML content
+        // bars[k - 1].innerHTML = tempArr[k - 1]; // Move innerHTML content
         if (isPaused) await waitWhilePaused();
         await delay(swapSpeed); // Delay to visualize each step
         bars[k - 1].style.height = `${arr[k - 1]}px`; // Update the height of the bar
@@ -365,7 +365,7 @@ function delay(ms) {
 function renderArray(arr) {
     const bars = document.querySelectorAll(".bar");
     for (let i = 0; i < arr.length; i++) {
-        bars[i].innerHTML = arr[i];
+        // bars[i].innerHTML = arr[i];
         bars[i].style.height = `${arr[i]}px`;
     }
 }
@@ -375,7 +375,7 @@ function renderArray(arr) {
 function generateRandomArray(length) {
     const randomArray = [];
     for (let i = 0; i < length; i++) {
-        randomArray.push(Math.floor(Math.random() * 450) + 50); // Adjust the range as needed
+        randomArray.push(Math.floor(Math.random() * 400) + 50); // Adjust the range as needed
     }
     return randomArray;
 }
